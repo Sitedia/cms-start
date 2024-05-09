@@ -1,11 +1,11 @@
 {
-    "exclude": ["node_modules" ],
-    "compilerOptions": {
-        "module": "NodeNext",
-        "target": "ES2022",
-        "composite": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "skipLibCheck": true,
-    }
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ES2022",
+    "composite": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true
+  }
 }
