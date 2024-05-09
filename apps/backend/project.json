@@ -15,6 +15,23 @@
       "options": {
         "command": "tsc --build ./apps/backend/tsconfig.build.json"
       }
+    },
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node --enable-source-maps --watch --no-warnings ./dist/apps/backend/main.js"
+      },
+      "dependsOn": ["build"]
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "tsc --build ./apps/backend/tsconfig.build.json --watch",
+          "node --enable-source-maps --watch --no-warnings ./dist/apps/backend/main.js"
+        ]
+      },
+      "dependsOn": ["build"]
     }
   }
 }

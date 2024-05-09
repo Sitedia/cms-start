@@ -1,7 +1,8 @@
 {
   "type": "module",
   "dependencies": {
-    "@nestjs/platform-express": "^10.3.8"
+    "@nestjs/platform-express": "^10.3.8",
+    "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
     "@nestjs/common": "^10.3.8",
