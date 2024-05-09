@@ -1,4 +1,5 @@
 import eslintPlugin from '@eslint/js';
+import jestEslintPlugin from 'eslint-plugin-jest';
 import typescriptEslint from 'typescript-eslint';
 
 export default [
@@ -19,10 +20,8 @@ export default [
 
   // Configurations
   eslintPlugin.configs.recommended,
-  ...typescriptEslint.configs.strictTypeChecked.map((config) => ({
-    files: ['**/*.ts'],
-    ...config,
-  })),
+  ...typescriptEslint.configs.strictTypeChecked.map((config) => ({ files: ['**/*.ts'], ...config })),
+  ...[jestEslintPlugin.configs['flat/all']].map((config) => ({ files: ['**/*.spec.ts'], ...config })),
 
   // Custom configurations for Typescript files
   {
