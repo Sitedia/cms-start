@@ -3,12 +3,14 @@
   "compilerOptions": {
     "module": "NodeNext",
     "target": "ES2022",
+    "strict": true,
     "composite": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "noImplicitOverride": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "strict": true,
+    "removeComments": true,
     "baseUrl": "./",
     "paths": {
       "#libs/common": ["libs/common/src/index.js"]

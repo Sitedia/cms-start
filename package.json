@@ -13,7 +13,10 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
+    "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.3.8",
+    "@nx/nest": "^19.0.2",
+    "@nx/workspace": "^19.0.2",
     "@types/node": "^20.12.11",
     "@types/supertest": "^6.0.2",
     "eslint": "^8.57.0",

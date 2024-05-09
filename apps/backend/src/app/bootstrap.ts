@@ -19,7 +19,7 @@ export const bootstrap = async (): Promise<INestApplication> => {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup(options.basePath, app, document);
 
-  await app.listen(3000);
+  await app.listen(options.port);
 
   return app;
 };
