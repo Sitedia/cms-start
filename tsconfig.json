@@ -8,6 +8,10 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "strict": true
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "#libs/common": ["libs/common/src/index.js"]
+    }
   }
 }
