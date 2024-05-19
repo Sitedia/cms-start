@@ -5,5 +5,17 @@
     "source.addMissingImports": "explicit",
     "source.organizeImports": "explicit",
     "source.fixAll": "explicit"
-  }
+  },
+  "search.exclude": {
+    "dist/**": true
+  },
+  "vsicons.associations.files": [
+    {
+      "icon": "nx",
+      "extensions": ["project.json"],
+      "filename": true,
+      "format": "svg"
+    }
+  ],
+  "cSpell.words": ["nestjs"]
 }
